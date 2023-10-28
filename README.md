@@ -154,6 +154,6 @@ yarn start
 
 ### Demo video
 
-<a href="https://streamable.com/e/b4o09l" title="Link Title"><img src="https://streamable.com/e/b4o09l" alt="Alternate Text" /></a>
+![video](https://streamable.com/e/b4o09l)
 
 ![Demo screenshot](screen.png)
