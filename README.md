@@ -15,7 +15,7 @@
     - [Backend](#backend)
     - [Frontend](#frontend)
 - [Frontend](#frontend)
-  - [Demo video](#demo-video)
+  - [Demo video 🎥](#demo-video-)
 - [Improvements](#improvements)
   - [Failure tolerance](#failure-tolerance)
   - [Deployment](#deployment)
@@ -190,7 +190,7 @@ In order to run the thing you can run the following
 yarn start
 ```
 
-### Demo video
+### Demo video 🎥
 
 I made a short video that is accessible here
 
