@@ -214,6 +214,9 @@ When we make these retries, we have to make sure that only one of those retry op
 
 When doing these retries, there are also a couple of retry strategies that we could use: immediate retry, incremental, and exponential (we would see which one is the best one in our case).
 
+![dead letter queue drawio](https://github.com/hmainnizar3/wildcat-payments/assets/149262515/be66f592-27e1-4840-b38d-5c41353ed9c2)
+
+
 Another problem with this is that we have to make sure that we have an **exactly-once delivery** system. **Idempotency** is crucial here. If multiple concurrent requests are detected with the same idempotency key, only one request should be processed.
 
 When receiving a payment, we would insert a row in the DB. A successful insertion means that the payment that we just received did not exist, so the second request will not be processed.
