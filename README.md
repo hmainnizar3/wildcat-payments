@@ -224,12 +224,14 @@ When receiving a payment, we would insert a row in the DB. A successful insertio
 I did not write a test for it, but this is an interesting test case scenario.
 
 ### Scalability
-
-- A queuing system would help a lot here; I'm not sure how many payments this system can take before it goes down.
 ![messaging queue-Page-2 drawio](https://github.com/hmainnizar3/wildcat-payments/assets/149262515/bae74128-8d4a-45d4-85b0-fe915f28a676)
 
-- I think using GraphQL here would be quite nice, as the payment object can eventually become a bit big, and it would help the frontend only consume the data that it needs. This is not from a performance point of view but more of a logical and semantic point of view.
-- Writing the high-intensity systems in a more performant language.
+- To ensure the system can handle a large volume of payments without failure, implementing a queue system would be beneficial.
+- Considering the potential growth of the payment object, adopting GraphQL could be advantageous. This would allow the frontend to selectively fetch only the necessary data, improving logic and semantics rather than performance.
+- Using a language known for its performance efficiency.
+- Implementing load balancing to distribute network traffic across multiple servers.
+- Distributed database system to improve data redundancy and availability.
+- Finally, implementing auto-scaling based on the system load can help to handle peak times efficiently.
 
 ### Deployment
 
